@@ -1,0 +1,114 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./assets/back.jpg");
+    background-size: cover;
+    background-position: center;
+    
+}
+h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+}
+
+main {
+    text-align: center;
+    border: 1px solid;
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+    filter: sepia();
+    padding: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+#resetButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  #resetButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .cb
+  {
+    display:flex;
+    gap: 10px; 
+    margin: auto;
+  
+    justify-content: center;
+  }
+  
+  .choiceBtnWrapper {
+    text-align: center;
+  }
+  
+  .choiceBtn {
+    display: flex;
+    flex-direction:column-reverse;
+    align-items: center;
+    margin: 10px;
+    justify-content: flex-start;
+    width:60px;
+  }
+  
+  .choiceBtn img {
+    width: 50px; /* Adjust as needed */
+  }
+  
+  .choiceBtn span {
+    font-size: 14px; /* Adjust as needed */
+  }
+  #resultGif img{
+    max-width: 300px;
+    border-radius:10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    
+  }
+  
+  .compteur {
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 8px;
+    width: auto;
+    padding: 3px;
+  }
+  
+  @media (max-width: 768px) {
+    .cb {
+      display: flex;
+      border-radius: 10px;
+      flex-direction: row;
+      align-content: center;
+      flex-wrap: wrap;
+    }
+    h2 {
+      font-weight: 200;
+      color: rgb(0, 0, 0);
+      font-size: 20px;
+    }
+    .compteur{
+      width: 135px;
+    }
+    .scoreboard{
+      display: grid;
+      
+      justify-content: space-around;
+      align-content: space-around;
+    }
+   
+  }
